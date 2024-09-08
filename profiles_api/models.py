@@ -34,7 +34,6 @@ class UserProfileManager(BaseUserManager):
 
 
 
-
 class UserProfile(AbstractBaseUser, PermissionsMixin):
     """Database Model for users in the System"""
     email = models.EmailField(max_length=255, unique=True)
