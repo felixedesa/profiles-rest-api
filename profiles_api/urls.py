@@ -8,6 +8,7 @@ router.register('profile', views.UserProfileViewSet, basename='profile')
 
 urlpatterns = [
     path('hello-view/', views.HelloApiView.as_view(), name='hello-view'),
+    path('login/', views.UserLoginApiView.as_view(), name='login'),  # Include the login URL in the main URLconf
     path('', include(router.urls)),  # Include the router URLs in the main URLconf
 
 
